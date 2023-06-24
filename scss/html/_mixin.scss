@@ -1,0 +1,151 @@
+//mixin
+
+/*estilos de pantalla para celulares*/
+/*html home*/
+@mixin celular{
+    @media screen and (max-width:600px){
+        grid-template-columns: repeat(1, 1fr);
+        column-gap:10px;
+        row-gap: 10px;
+        .img-pr{
+            grid-column: span 1;
+            height: 100%;
+            h2{
+                font-size: 25px;
+                
+            }
+        }
+
+        /*html contacto*/
+        .img-ct{ 
+            grid-column: span 1;
+            height: 100%;
+            h2{
+                font-size: 25px;
+            }
+            
+        }
+        /*html nosotros*/
+        .img-nt{
+            grid-column: span 1;
+            height: 100%;
+        }
+
+       
+
+        /*html oportunidades*/
+        .img-op{
+            grid-column: span 1;
+            height: 100%;
+        }
+       
+
+        /*html servicios*/
+        .img-sv{
+            grid-column: span 1;
+            height: 100%;
+        }
+
+    }
+}
+ 
+/*estilos de pantalla para tablet*/
+/*html home*/
+@mixin tablet{
+    @media screen and (min-width:600px){
+        grid-template-columns: repeat(2, 1fr);
+        column-gap:10px;
+        row-gap: 10px;
+        .img-pr{
+            grid-column: span 2;
+            height: 500px;
+            h2{
+                font-size: 40px;
+            }
+        }
+
+        /*html contacto*/
+        .img-ct{ 
+            grid-column: span 2;
+            height: 500px;
+            
+            h2{
+                
+                font-size: 30px;
+            }
+            
+        }
+        /*html nosotros*/
+        .img-nt{
+            grid-column: span 2;
+            height: 500px;
+        }
+
+        /*html oportunidades*/
+        .img-op{
+            grid-column: span 2;
+            height: 500px;
+        }
+
+        /*html servicios*/
+        .img-sv{
+            grid-column: span 2;
+            height: 500px;
+        }
+
+    }
+}
+
+/*estilos de pantalla para notebook*/
+/*html home*/
+
+@mixin notebook{
+    @media screen and (min-width:1024px){
+        grid-template-columns: repeat(4, 1fr);
+        column-gap:10px;
+        row-gap: 10px;
+        .img-pr{
+            grid-column: span 4;
+            height: 100%;
+            h2{
+                font-size: 50px;
+            }
+        }
+         /*html contacto*/
+         .img-ct{ 
+            grid-column: span 4;
+            height: 100%;
+            h2{
+                font-size: 30px;
+            }
+            }
+            /*formulario contacto centrado*/
+            .registro{
+                margin-left: 400px;
+            }
+
+             /*html nosotros*/
+        .img-nt{
+            grid-column: span 4;
+            height: 100%;
+        }
+
+        /*html oportunidades*/
+        .img-op{
+            grid-column: span 4;
+            height: 100%;
+        }
+
+        /*html servicios*/
+        .img-sv{
+            grid-column: span 4;
+            height: 100%;
+        }
+            }
+
+        }
+
+        
+
+        
+

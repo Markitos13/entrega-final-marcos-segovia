@@ -1,0 +1,22 @@
+//importar archivos secundarios de sass
+
+@import "../utilidades/variables";
+
+//main oportunidades
+/*main oportunidades*/
+.img-op{
+    background-image: url(../img/oportunidadespr.jpeg);
+    background-size: cover;
+
+    .oportunidadespr{
+        font-size: 30px;
+        font-style: oblique;
+        color: $color-empresa;
+        object-fit: cover;
+        text-align: end;
+        padding: 20%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+}
+

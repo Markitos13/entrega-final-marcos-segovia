@@ -1,0 +1,290 @@
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.card-title {
+  font-size: 20px; }
+
+/*main home*/
+.img-pr {
+  background-image: url(../img/pagina-principal.jpeg);
+  background-size: cover; }
+  .img-pr h2 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    object-fit: cover;
+    padding: 20%; }
+    .img-pr h2 .amarillo {
+      color: yellow; }
+
+.card-title {
+  font-size: 20px; }
+
+/*main contactos*/
+.img-ct {
+  background-image: url(../img/principal-contactos.jpeg);
+  background-size: cover; }
+  .img-ct .contactopr {
+    font-style: oblique;
+    color: black;
+    font-size: 40px;
+    object-fit: cover;
+    padding: 20%; }
+    .img-ct .contactopr .rojo {
+      color: red; }
+
+.card-title {
+  font-size: 20px; }
+
+/*main nosotros*/
+.img-nt {
+  background-image: url(../img/pagina-nosotros.jpg);
+  background-size: cover; }
+  .img-nt .nosotrospr {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20%;
+    color: black;
+    object-fit: cover; }
+
+.mision {
+  object-fit: cover;
+  margin-left: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  color: teal; }
+
+.parrafo {
+  object-fit: cover;
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 20px;
+  background-color: blanchedalmond; }
+
+.card-title {
+  font-size: 20px; }
+
+/*main oportunidades*/
+.img-op {
+  background-image: url(../img/oportunidadespr.jpeg);
+  background-size: cover; }
+  .img-op .oportunidadespr {
+    font-size: 30px;
+    font-style: oblique;
+    color: white;
+    object-fit: cover;
+    text-align: end;
+    padding: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.card-title {
+  font-size: 20px; }
+
+/*main servicios*/
+.img-sv {
+  background-image: url(../img/servicios.jpeg);
+  background-size: cover; }
+  .img-sv .serviciospr {
+    font-style: oblique;
+    object-fit: cover;
+    text-align: end;
+    color: white;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20%; }
+
+/*estilos de pantalla para celulares*/
+/*html home*/
+/*estilos de pantalla para tablet*/
+/*html home*/
+/*estilos de pantalla para notebook*/
+/*html home*/
+/*estilos extend boton wsp*/
+.btn-wsp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  border-radius: 70px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 10px white;
+  z-index: 100px; }
+
+/*estilos de header*/
+/*menu de todos los html*/
+header {
+  align-items: center;
+  gap: 10px;
+  background-color: teal;
+  display: flex;
+  justify-content: space-between; }
+  header h1 {
+    font-size: 25px;
+    padding: 20px; }
+    header h1 a {
+      color: white;
+      text-decoration: none; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      display: inline-block;
+      margin: 0px; }
+
+/*main de todos los html*/
+/*boton de wsp*/
+.btn-wsp {
+  background-image: url(../img/whatsapp-icono.png);
+  background-color: green; }
+  .btn-wsp :hover {
+    text-decoration: none; }
+
+/*estilos de footer*/
+/*de todos los html*/
+footer {
+  margin-top: 10rem;
+  text-align: center;
+  background-color: teal; }
+  footer .comunidad {
+    color: white;
+    text-decoration: none; }
+
+/*estilos de main para celulares*/
+.contenedor {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px; }
+  .contenedor .registro {
+    width: 400px;
+    background-color: teal;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    object-fit: cover; }
+    .contenedor .registro h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center; }
+    .contenedor .registro .completar {
+      width: 100%;
+      background-color: white;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid teal;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px; }
+    .contenedor .registro .mensaje {
+      width: 100%;
+      background-color: white;
+      padding: 50px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid teal;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px;
+      text-align: center; }
+
+/*estilos para pantallas de celulares*/
+@media screen and (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /*html contacto*/
+    /*html nosotros*/
+    /*html oportunidades*/
+    /*html servicios*/ }
+    .contenedor .img-pr {
+      grid-column: span 1;
+      height: 100%; }
+      .contenedor .img-pr h2 {
+        font-size: 25px; }
+    .contenedor .img-ct {
+      grid-column: span 1;
+      height: 100%; }
+      .contenedor .img-ct h2 {
+        font-size: 25px; }
+    .contenedor .img-nt {
+      grid-column: span 1;
+      height: 100%; }
+    .contenedor .img-op {
+      grid-column: span 1;
+      height: 100%; }
+    .contenedor .img-sv {
+      grid-column: span 1;
+      height: 100%; } }
+
+/*estilos para pantallas de tablet*/
+@media screen and (min-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /*html contacto*/
+    /*html nosotros*/
+    /*html oportunidades*/
+    /*html servicios*/ }
+    .contenedor .img-pr {
+      grid-column: span 2;
+      height: 500px; }
+      .contenedor .img-pr h2 {
+        font-size: 40px; }
+    .contenedor .img-ct {
+      grid-column: span 2;
+      height: 500px; }
+      .contenedor .img-ct h2 {
+        font-size: 30px; }
+    .contenedor .img-nt {
+      grid-column: span 2;
+      height: 500px; }
+    .contenedor .img-op {
+      grid-column: span 2;
+      height: 500px; }
+    .contenedor .img-sv {
+      grid-column: span 2;
+      height: 500px; } }
+
+/*estilos para pantallas de notebook*/
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /*html contacto*/
+    /*formulario contacto centrado*/
+    /*html nosotros*/
+    /*html oportunidades*/
+    /*html servicios*/ }
+    .contenedor .img-pr {
+      grid-column: span 4;
+      height: 100%; }
+      .contenedor .img-pr h2 {
+        font-size: 50px; }
+    .contenedor .img-ct {
+      grid-column: span 4;
+      height: 100%; }
+      .contenedor .img-ct h2 {
+        font-size: 30px; }
+    .contenedor .registro {
+      margin-left: 400px; }
+    .contenedor .img-nt {
+      grid-column: span 4;
+      height: 100%; }
+    .contenedor .img-op {
+      grid-column: span 4;
+      height: 100%; }
+    .contenedor .img-sv {
+      grid-column: span 4;
+      height: 100%; } }

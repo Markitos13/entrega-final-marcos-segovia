@@ -1,0 +1,143 @@
+
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+//import
+
+@import "html/home";
+@import "html/contactos";
+@import "html/nosotros";
+@import "html/oportunidades";
+@import "html/servicios";
+@import "html/mixin";
+@import "html/extend";
+
+
+
+/*estilos de header*/
+/*menu de todos los html*/
+
+header{
+    align-items: center;
+    gap: 10px;
+    background-color:$color-principal;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-size: 25px;
+        padding: 20px;
+        a{
+            color: $color-empresa;
+            text-decoration: none;
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+
+
+/*main de todos los html*/
+/*boton de wsp*/
+.btn-wsp{
+    background-image: url(../img/whatsapp-icono.png);
+    @extend %wsp-btn;
+    background-color: $color-wsp;
+    :hover{
+        text-decoration: none;
+    }
+}
+
+
+
+/*estilos de footer*/
+/*de todos los html*/
+
+footer{
+    margin-top: 10rem;
+    text-align: center;
+    background-color: $color-principal;
+    .comunidad{
+            color: $color-empresa;
+            text-decoration: none;
+        }
+
+    }
+
+
+/*estilos de main para celulares*/
+
+.contenedor{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    .registro{
+        width: 400px;
+        background-color: $color-principal;
+        padding: 10px;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: $color-empresa;
+        object-fit: cover;
+        h3{
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .completar{
+            width: 100%;
+            background-color: $color-empresa;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid $color-principal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        .mensaje{
+            width: 100%;
+            background-color: $color-empresa;
+            padding: 50px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid $color-principal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            text-align: center;
+        }
+
+    }
+}
+  
+/*estilos para pantallas de celulares*/
+
+.contenedor{
+    @include celular
+}
+    
+/*estilos para pantallas de tablet*/
+
+.contenedor{
+    @include tablet
+}
+/*estilos para pantallas de notebook*/
+
+.contenedor{
+    @include notebook
+}

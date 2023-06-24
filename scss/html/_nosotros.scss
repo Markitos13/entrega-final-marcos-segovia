@@ -1,0 +1,39 @@
+//importar archivos secundarios de sass
+
+@import "../utilidades/variables";
+
+//main nosotros
+/*main nosotros*/
+.img-nt{
+    background-image: url(../img/pagina-nosotros.jpg);
+    background-size: cover;
+
+    .nosotrospr{
+        font-size: 50px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        padding: 20%;
+        color: $color-general;
+        object-fit: cover;
+    }
+
+}
+
+    .mision{
+        object-fit: cover;
+        margin-left: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+        color: $color-principal;
+
+    }
+.parrafo{
+    object-fit: cover;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-general;
+    font-size: 20px;
+    background-color:blanchedalmond;
+}
+
+
+
